@@ -1,0 +1,14 @@
+pages:
+  stage: deploy
+  tags:
+    - cbpf-runner
+  script:
+    - mkdir -p public
+    - rsync -a --exclude public --exclude '.git*' --exclude '.env*' ./ public/
+  pages:
+    publish: public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

@@ -1,0 +1,12 @@
+:root {
+  --bg-primary: #2d2438;
+  --bg-card2: linear-gradient(135deg, rgba(103, 29, 171, 0.8), rgba(164, 45, 87, 0.8));
+  --bg-card: linear-gradient(135deg, rgba(69, 37, 98, 0.8), rgba(120, 25, 58, 0.8));
+  --text-primary: #ffffff;
+  --text-muted: #c4b5c8;
+  --accent-pink: #e879a0;
+  --accent-purple: #bd83f2;
+  --gradient: linear-gradient(135deg, #a855f7, #e879a0);
+  --gradient-body: linear-gradient(135deg,#432c65,#3b2057,#521c69,#7e4c8d
+  );
+}

@@ -1,0 +1,461 @@
+body {
+  background: var(--gradient-body);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-card);
+    padding: 1rem 2rem;
+}
+nav {
+  display: flex;          /* ativa o Flexbox — sem isso nada funciona */
+  align-items: center;    /* centraliza verticalmente logo e links */
+}
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav a {
+  color: var(--text-primary);
+  text-decoration: none;
+  border: 1px solid var(--accent-purple); /* borda para destacar os links */
+  padding: 0.5rem 0.5rem; /* deixa os links mais destacados */
+  border-radius: 10px; /* bordas arredondadas para um visual mais suave */
+  margin-right: 1rem;
+  font-size:  1rem; /* aumenta o tamanho dos links para destacar mais */
+}
+nav ul {
+  list-style: none;    /* remove os pontinhos */
+  display: flex;       /* coloca os itens lado a lado */
+  gap: 0.1rem;    /* espaço entre os itens */
+  margin-left: auto;   /* espaço entre os itens */
+
+}
+#principal {
+  display:  grid; /* espaço para o header fixo */
+  grid-template-columns: 2fr 1fr; /* 2 partes para o texto, 1 parte para a imagem */
+  align-items: center; /* centraliza verticalmente o conteúdo */
+  gap: 2rem; /* espaço entre o texto e a imagem */
+  padding: 3rem 4rem 5rem; /* espaço para o header fixo*/
+  min-height: 60vh; /* garante que a seção ocupe toda a altura da tela */
+}
+#principal h1 {
+  font-size: 2.3rem;
+  font-weight: bold; /* deixa o texto mais impactante */
+  margin-bottom: 1rem; /* espaço entre o título e o parágrafo */
+  font-style: italic; /* deixa o título mais estilizado */
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+  -webkit-background-clip: text; /* faz o gradiente preencher o texto */
+  -webkit-text-fill-color: transparent;
+}
+#principal p {
+  font-size: 1.0rem; /* aumenta texto */
+  line-height: 1.6; /* melhora a legibilidade */
+  color: var(--text-muted); /* cor mais suave para o parágrafo */
+  font-family: sans-serif;
+  margin-bottom: 2.5rem; /* fonte mais moderna para o parágrafo */
+  max-width: 85%;
+  text-align: justify; /* justifica o texto para um visual mais limpo */
+}
+.redesSociais a {
+    gap: 1rem; /* espaço entre o ícone e o texto */
+    color: var(--text-primary);
+    text-decoration: none; /* remove o sublinhado */
+    border: 1px solid var(--accent-purple); /* borda para destacar os links */
+    padding: 0.5rem 1rem; /* deixa os links mais destacados */
+    border-radius: 20px; /* bordas arredondadas para um visual mais suave */
+   vertical-align: middle; /* centraliza verticalmente o ícone e o texto */
+    margin-right: 1rem;
+    font-size:  1.3rem; /* aumenta o tamanho dos links para destacar mais */
+    transition: color 0.3s ease; 
+}
+.redesSociais a:hover { /* efeito de hover para os links de contato */
+  color: var(--accent-purple);
+}
+.imagemPrincipal img {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente a imagem */
+  width: 100%; /* faz a imagem ocupar toda a largura disponível*/
+  max-width: 500px; /* limita o tamanho da imagem */
+  height: 200px; /* mantém a proporção da imagem */
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* deixa redondo */
+  object-fit: cover; /* evita distorção */
+  border: 3px solid var(--accent-purple); /* borda para destacar a imagem */
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4); /* sombra suave para destacar a imagem */
+  transition: 0.3s;
+  
+}
+.imagemPrincipal img:hover {
+  transform: scale(1.05); /* leve zoom ao passar o mouse */
+  box-shadow: 0 0 35px rgba(168, 85, 247, 0.6); /* sombra mais intensa no hover */
+}
+/* A seção como um todo */
+#habilidades {
+  padding: 1rem; /* espaço interno para a seção */
+  text-align: center; /* centraliza o texto */
+  gap: 2rem; /* espaço entre os elementos */
+  font-size: 1.3rem; /* fonte moderna e legível */
+ 
+}
+#habilidades h2 {
+  font-size: 2rem; /* título maior e mais impactante */
+  margin-bottom: 1rem; /* espaço entre o título e o parágrafo */
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+#habilidades p {
+  color: var(--text-muted); /* cor mais suave para o parágrafo */
+  line-height: 1.2; /* melhora a legibilidade */
+  margin-bottom: 2.5rem; /* espaço entre o parágrafo e as habilidades */
+}
+
+.abas-habilidades {
+  display: flex; /* ativa o Flexbox */
+  justify-content: center; /* centraliza horizontalmente as abas */
+  gap: 1rem; /* espaço entre as abas */
+  margin-bottom: 2rem; /* espaço entre as abas e o conteúdo */
+  scale: 1.6/* aumenta o tamanho das abas para destacar mais */
+  
+}
+.abas-habilidades button {
+  background-color: transparent; /* cor de fundo para as abas */
+  border: 1px solid var(--accent-purple); /* borda para destacar as abas */
+  color: var(--text-primary); /* cor do texto das abas */
+  padding: 0.5rem 1rem; /* espaço interno para as abas */
+  border-radius: 20px;
+  cursor: pointer;
+}
+.abas-habilidades button:hover { /* efeito de hover para os links de contato */
+  color: var(--accent-purple);
+  
+}
+/* Estado ativo do botão — quando a aba está selecionada */
+.abas-habilidades button.ativo {
+  background: var(--gradient);
+  border: none;
+  color: white;
+}
+
+/* TODOS os painéis começam escondidos */
+.card-habilidades > div {
+  display: none;
+}
+
+/* Só o painel com a classe .ativo aparece */
+.card-habilidades > div.ativo {
+  display: flex; /* ativa o Flexbox para os cards de habilidades */
+  flex-wrap: wrap; /* permite que os cards quebrem para a próxima linha se necessário */
+  justify-content: center; /* centraliza horizontalmente os cards */
+  gap: 1rem; /* espaço entre os cards */
+}
+
+/* Estilo dos cards de cada habilidade */
+.card {
+  background: var(--bg-card2); /* cor de fundo para os cards */
+  padding: 3.2% 4.7%;/* espaço interno para os cards */
+  border-radius: 20px; /* bordas arredondadas para um visual mais suave */
+  border: 1px solid var(--accent-purple);
+  color: var(--text-primary);
+  font-size: 1.0rem; /* fonte legível para os cards */
+}
+#trajetoria {
+  padding: 5%; /* espaço interno para a seção */
+  text-align: center; /* centraliza o texto */
+  gap: 2rem; /* espaço entre os elementos */
+}
+#trajetoria h2 {
+    font-size: 2rem; /* título maior e mais impactante */
+  margin-bottom: 1rem; /* espaço entre o título e o parágrafo */
+  background: linear-gradient(100deg, var(--accent-purple), var(--accent-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#trajetoria p {
+  color: var(--text-muted); /* cor mais suave para o parágrafo */
+  line-height: 1.2; /* melhora a legibilidade */
+  margin-bottom: 1.5rem; /* espaço entre o parágrafo e a linha do tempo */
+
+}
+
+#trajetoria > p { /* estilo específico para o parágrafo introdutório da seção */
+  color: var(--text-muted); /* cor mais suave para o parágrafo */
+  margin-bottom: 3rem;
+}
+
+/* Contêiner — position relative permite criar a linha do meio */
+.timeline-container {
+  position: relative; /* necessário para a linha vertical do meio */
+  max-width: 800px; /* largura máxima para a linha do tempo */
+  margin: 0 auto; /* centraliza a linha do tempo horizontalmente */
+}
+
+/* A linha vertical do meio */
+.timeline-container::before { /* pseudo-elemento para a linha vertical */
+  content: ''; /* necessário para criar o elemento, mas não adiciona texto */
+  position: absolute;   /* posicionamento absoluto para colocar a linha onde queremos */
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gradient);
+  transform: translateX(-50%);
+}
+
+/* Cada card ocupa metade da largura */
+.timeline-item {
+  width: 45%;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-purple);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+
+  /* animação de scroll */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Itens ímpares — ficam na esquerda */
+.timeline-item:nth-child(odd) { /* seleciona os itens ímpares da linha do tempo */
+  margin-right: auto;
+}
+
+/* Itens pares — ficam na direita */
+.timeline-item:nth-child(even) { /* seleciona os itens pares da linha do tempo */
+  margin-left: auto;
+}
+/* Quando o JS adiciona .visivel */
+.timeline-item.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item h3 { /* título de cada item da linha do tempo */
+  color: var(--accent-pink);
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p { /* parágrafo de cada item da linha do tempo */
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.data-artigo { /* estilo para a data de cada artigo na linha do tempo */
+  font-size: 0.99rem;
+  color: var(--accent-purple);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.timeline-item {
+  opacity: 0; /* torna a linha um pouco transparente para um visual mais leve */
+  transform: translateY(40px); /* move a linha para baixo para o efeito de animação */
+  transition: opacity 0.6s ease, transform 0.6s ease; /* animação suave para a linha */
+  gap: 1rem; /* espaço entre os itens da linha do tempo */
+}
+.timeline-item.visivel {
+  opacity: 1; /* torna a linha totalmente opaca quando visível */
+  transform: translateY(0); /* move a linha para sua posição original quando visível */
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* preto com 50% de transparência */
+  opacity: 0;                      /* invisível por padrão */
+  pointer-events: none;            /* não captura cliques quando invisível */
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+/* Quando o overlay tem a classe .aberto, fica visível */
+#overlay.aberto {
+  opacity: 1;
+  pointer-events: all; /* volta a capturar cliques */
+}
+
+/* O drawer — painel lateral direito */
+#drawer-blog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background: var(--bg-card);
+  padding: 2rem;
+  transform: translateX(100%); /* escondido fora da tela à direita */
+  transition: transform 0.3s ease; /* animação suave ao deslizar */
+  z-index: 101; /* fica na frente do overlay */
+  overflow-y: auto; /* scroll interno se o conteúdo for longo */
+}
+
+/* Quando o drawer tem a classe .aberto, desliza para dentro da tela */
+#drawer-blog.aberto {
+  transform: translateX(0);
+}
+
+/* Cabeçalho do drawer com título e botão X */
+.blog-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.blog-view h2 {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+}
+
+/* Botão de fechar */
+#fechar-blog {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Cards dos artigos dentro do drawer */
+.card-blog {
+  background: var(--bg-primary);
+  border: 1px solid var(--accent-purple);
+  border-radius: 12px; /* bordas arredondadas para um visual mais suave */
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card-blog h3 {
+  color: var(--accent-pink);
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.card-blog p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+#drawer-contato {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 420px;
+  height: 100%;
+  background: var(--bg-card);
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 101;
+  overflow-y: auto;
+}
+
+#drawer-contato.aberto {
+  transform: translateX(0);
+}
+
+.contato-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#drawer-contato h2 {
+  font-size: 1.5rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#fechar-contato {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Card interno com fundo diferente */
+.contato-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--accent-purple);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.contato-card h3 {
+  font-size: 1.3rem;
+  color: var(--accent-pink);
+  margin-bottom: 0.8rem;
+}
+
+.contato-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Links em coluna com ícone à esquerda */
+.contato-links {
+  display: flex;
+  flex-direction: column; /* empilha os links em coluna */
+  gap: 1rem;
+}
+
+.contato-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease; /* animação suave para a cor dos links */
+  
+}
+.contato-links a i {
+    font-size: 1.2rem;
+    min-width: 20px; 
+    border: 1px solid var(--accent-purple); /* borda para destacar os links */
+    padding: 0.5rem 1rem; /* deixa os links mais destacados */
+    border-radius: 20px; /* bordas arredondadas para um visual mais suave */
+  
+}
+
+.contato-links a:hover { /* efeito de hover para os links de contato */
+  color: var(--accent-pink);
+}
+
+/* Ícone de cada link */
+.icone {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--accent-purple);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--accent-purple);
+  flex-shrink: 0; /* impede o ícone de encolher */
+}

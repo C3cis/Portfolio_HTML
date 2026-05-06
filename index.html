@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portifolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styler.css">
+    <script src="Javascript/script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="logo">Meu Portfólio</span>
+            <ul>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="principal">
+            <div class="textoPrincipal">
+                <h1>Desenvolvedora<span> Back-end Júnior</span></h1>
+                <p> Sou estudante de Sistemas de Informação, atualmente cursando o 3º semestre. Atuo como estagiária no Centro Brasileiro de Pesquisas Físicas (CBPF).
+                Direciono minha formação para desenvolvimento web, com foco em back-end utilizando linguagem Java e framework como Spring Boot. 
+                Meus estudos também corroboram para o aprofundamento e experiência em Linux e tecnologias web, buscando desenvolver aplicações cada vez mais estruturadas e eficientes.
+                Este portfólio reúne meus primeiros projetos e evolução como desenvolvedora. </p>
+                <div class="redesSociais">
+    <a href="https://github.com/C3cis" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/feed/" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+</div>
+            </div>
+            <div class="imagemPrincipal">
+                <img src="fotoPerfil.jpeg" alt="Imagem Principal">
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades & Tecnologias</h2>
+            <p> Habilidades adquiridas e em aprendizado</p>
+
+            <div class="abas-habilidades">
+                <button data-tab="desenvolvimento">Desenvolvimento</button>
+                <button data-tab="banco-de-dados">Banco de Dados</button>
+                <button data-tab="web-frontend">Web & Front-end </button>
+            </div>
+
+            <div class="card-habilidades">
+                <div data-content="desenvolvimento">
+                    <div class="card">Java</div>
+                    <div class="card">Spring Boot</div>
+                    <div class="card">Linux</div>
+                </div>
+                <div data-content="banco-de-dados">
+                    <div class="card">MySQL</div>
+                    <div class="card">SQL Oracle </div>
+                </div>
+                <div data-content="web-frontend">
+                    <div class="card">HTML</div>
+                    <div class="card">CSS</div>
+                    <div class="card">JavaScript</div>
+                </div>
+            </div>
+        </section>
+
+       <section id="trajetoria">
+  <h2>Minha Jornada</h2>
+  <p>Minha trajetória de aprendizado e crescimento profissional.</p>
+    <div class="timeline-container">
+
+    <div class="timeline-item"> 
+      <span class="data-artigo">29 de Agosto, 2025</span>
+      <h3>Certificação Back-End com Java</h3>
+      <p>Bootcamp DIO - Santander 2025 - 78H</p>
+      <p>Curso de extensão focado em desenvolvimento back-end com Java e com participação em projetos práticos no versionamento do gitHub .</p>
+    </div>
+
+    <div class="timeline-item">
+      <span class="data-artigo">20 de Agosto, 2025</span>
+      <h3>Projeto de Extensão - Graduação</h3>
+      <p>Projeto de Extensão - Senac - Banco de dados, Prototipo 1°</p>
+      <p>Projeto LIMS - Laboratory Information Management System focado em otimização de processos no setor de logística da empresa referente. Modelagem Swing java </p>
+    </div>
+
+    <div class="timeline-item">
+      <span class="data-artigo">10 de Setembro, 2025</span>
+      <h3>Certificação de Excel</h3>
+      <p> Curso Em video - 40H</p>
+      <p>Curso de extensão focado em desenvolvimento de habilidades intermediarias em Excel.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="data-artigo">2 de Julho, 2026</span>
+      <h3>Projeto de Extensão - Graduação</h3>
+      <p>Projeto de Extensão - Senac - Banco de dados, Prototipo 2°</p>
+      <p>Projeto LIMS - Laboratory Information Management System - Estrutura em Spring Boot </p>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <aside id="drawer-blog"> 
+        <div class="blog-view">
+            <h2>Blog</h2>
+
+            <button id="fechar-blog">X</button>
+        </div>
+
+        <div class="blog-conteudo">
+            <div class="card-blog">
+                <h3>Postagem 01</h3>
+                <span class="data-artigo">Publicado em 6 de Maio, 2026</span>
+                <p>Atualmente, estou desenvolvendo um projeto acadêmico com foco em Spring Boot, voltado para o gerenciamento de equipamentos. 
+                A aplicação segue uma arquitetura em camadas (Controller, Service e Repository), visando melhor organização e separação de responsabilidades.
+                Utilizo MySQL como banco de dados nesta primeira versão, com intenção de evoluir a estrutura futuramente. 
+                Além disso, na interface, busquei aplicar conceitos de usabilidade e organização, priorizando uma experiência mais eficiente.</p>
+
+            </div>
+            <div class="card-blog">
+                <h3>Postagem 2</h3>
+                <span class="data-artigo">Publicado em 5 de Maio, 2026</span>
+                <p>Atualmente, estou aprofundando meus conhecimentos em Linux, com foco na distribuição Rocky Linux, por meio de cursos e prática no dia a dia. 
+                Tenho trabalhado com criação e versionamento de máquinas virtuais, explorando diferentes configurações de ambiente
+                Além disso, venho aplicando esses aprendizados no estágio, o que tem contribuído para uma melhor compreensão de sistemas e do ambiente de desenvolvimento.</p>
+            </div>
+        </div>
+    </aside>
+
+<div id="drawer-contato">
+  <div class="contato-header">
+    <h2>Contato</h2>
+    <button id="fechar-contato">✕</button>
+  </div>
+
+  <div class="contato-card">
+    <h3>Conecte-se Comigo</h3>
+    <p>Estou aberta a oportunidades, projetos e trocas de conhecimento. 
+        Se quiser conversar ou saber mais sobre meu trabalho, é só entrar em contato.
+        </p>
+
+    <div class="contato-links">
+  <a href="mailto:ceciliaponte0124@gmail.com">
+    <i class="fa-solid fa-envelope"></i>
+    <span>cecilia@gmail.com</span>
+  </a>
+
+  <a href="https://github.com/C3cis" target="_blank">
+    <i class="fa-brands fa-github"></i>
+    <span>github.com/C3cis</span>
+  </a>
+
+  <a href="https://linkedin.com/in/cecis" target="_blank">
+    <i class="fa-brands fa-linkedin-in"></i>
+    <span>linkedin.com/in/cecis</span>
+  </a>
+</div>
+  </div>
+</div>
+
+</body>
+
+</html>
